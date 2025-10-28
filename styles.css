@@ -20,27 +20,38 @@ body {
     padding:2rem 3rem;
 }
 
-header {
-    /* display: grid;
-    grid-template-columns:2fr 3fr; */
-    display: flex;
-    align-items: center;
+header, footer {
+    
+
+    display: grid;;
    
     border: 1px solid gray;
     padding: 0 1rem;
+}
+
+header {
+ grid-template-columns: 2fr 3fr;
+}
+
+footer {
+    grid-template-columns:2fr 4fr;
+    width: 100%;
+  
 }
 
 
 .title-card{
     position: relative;
     margin: 0 auto;
+
     
-    width: 30rem;
     border: 1px solid blue;
     
 }
 .title-image {
-    width: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
     margin: auto 0;
     border: red solid .5px;
    
@@ -51,7 +62,7 @@ header {
     position: absolute;
     bottom: 0;
     text-align: center;
-    width: inherit;
+    width: 100%;
     border: gray 1px solid
     
     
@@ -60,6 +71,7 @@ header {
 .about-me {
     border: green .5px solid;
     margin: 0 auto;
+    
     padding: 2rem;
     line-height: 1.4rem;
 }
@@ -90,4 +102,10 @@ header {
     padding: .6rem;
     text-align: center;
     border: .5px white solid;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
