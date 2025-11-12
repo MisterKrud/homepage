@@ -78,6 +78,12 @@ h2{
     font-size: 2.5rem;
 }
 
+h3{
+    font-size: 1.8rem;
+    
+    color: #2b2b2b;
+    
+}
 
 
 
@@ -195,7 +201,8 @@ h2{
     padding: .6rem;
     text-align: center;
     max-width: 600px;
-    border: blue solid 1.5px;
+    
+    
    
     box-shadow: 2px 3px 6px rgb(205, 205, 205);
 } 
@@ -203,23 +210,60 @@ h2{
 .card-top{
     color: white;
     height: 250px;
-   padding: 0;
+   padding: 1rem 0 0 0;
+   
  
-    border: red 2px solid;
+    border-bottom: #2b2b2b solid 1px;
 
 }
+
+.card-body{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    
+    
+    
+}
+
+.card-body> .icons{
+    display: flex;
+    justify-items: flex-end;;
+    
+}
+
+.card-body > .icons > .icon{
+
+    margin: 0 1rem 0 0;
+    height: 2.3rem;
+    color: #2b2b2b;
+    
+}
+
+
+
+
 
 .project-image{
     object-fit: contain;
     display: block;
      max-height: 225px;
      max-width: 595px;
-     border: green solid 1px;
+
      margin: 0 auto auto;
 }
 
-.card-body{
-    border: solid orangered 1px;
+.project-name{
+    text-align: left;
+    padding-left: 1rem;
+    
+}
+
+.project-description{
+    padding: 1rem 0 2rem 1rem;
+    text-align: left;
 }
 
 /* .red-one{
