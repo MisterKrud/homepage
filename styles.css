@@ -4,7 +4,7 @@ media queries:
     Tablet 500-1000px
     Desktop >1000px
 */
-
+600
 
 
 
@@ -67,14 +67,14 @@ header {
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
 
     body{
         padding: 0 1.2rem;
          background: linear-gradient(170deg, rgb(99, 147, 183) 10% , rgb(205, 205, 205) 10.1%, white 10.3%);
     }
     main, .footer-container{
-        max-width: 550px;
+        max-width: 500px;
         margin: auto;
     }
 
@@ -180,7 +180,7 @@ h3{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:500px) {
     .title-image{
         height: 400px;
         min-width: 300px;
@@ -265,7 +265,7 @@ h3{
 
 }
 
-@media (max-width:600px){
+@media (max-width:500px){
 .about-me{
     margin: 0 auto 2rem auto;
     background-color: white;
@@ -326,7 +326,7 @@ h3{
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
     .shape{
   
     display: none;
@@ -488,7 +488,7 @@ h3{
     line-height: 1.3;
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
 .my-work {
     margin: 0 auto;
 }
@@ -634,7 +634,7 @@ address{
     margin-bottom: 1rem;
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
    footer{
     margin: 0;
     padding: 0;
