@@ -36,14 +36,14 @@ body{
 
 main{
    margin: 0 auto;
- max-width: 1200px;
+ max-width: 1400px;
     
 }
 
 
 header, .footer-container {
     
-   max-width: 1200px;
+   max-width: 1400px;
 margin: 0 auto;
     display: grid;
    
@@ -52,37 +52,16 @@ margin: 0 auto;
 }
 
 header {
-    display: grid;
+    
  grid-template-columns: 5fr 6fr;
  align-items: center;
  
- 
- 
+    max-width: 1400px;
 }
 
 
-@media (max-width: 1200px){
-    main, .footer-container{
-        max-width: 900px;
-    }
-}
 
-@media (max-width: 500px){
 
-    body{
-        padding: 0 1.2rem;
-         background: linear-gradient(170deg, rgb(99, 147, 183) 10% , rgb(205, 205, 205) 10.1%, white 10.3%);
-    }
-    main, .footer-container{
-        max-width: 500px;
-        margin: auto;
-    }
-
-    header{
-        display: block;
-        margin: auto;
-    }
-}
 
 h1, h2, h3, h4, h5{
     font-family: "Playfair Display", serif;
@@ -113,13 +92,14 @@ h3{
     /* border: blue solid 2px; */
   
     position: relative; 
+    top:3rem;
     z-index: 2;
    
 }
 
 .title-image{
-    height: 550px;
-    min-width: 400px;
+    height: 36rem;
+    
     width: 100%;
     /* float: left; */
     object-fit: cover; 
@@ -129,9 +109,9 @@ h3{
 
 
 .my-name{
-    position: relative;
-    top: 550px;
-    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: rgba(87, 87, 87, 0.4); 
     color: white;
     text-shadow: 1px 1px 2px rgb(4, 41, 79);
@@ -141,158 +121,32 @@ h3{
     padding: .4rem;
 }
 
-@media (max-width: 1200px) {
-    .title-image{
-        height: 450px;
-        min-width: 400px;
-        position: relative;
-        left: 100px;
-      
-        z-index: 1;
-        
-        
-    }
-
-    .my-name{
-    position: absolute;
-    background: none;
-    top: 5px;
-    left: 430px;
-    /* border: red 1px solid; */
-   min-width: 400px;
-   color:#2b2b2b;
-   z-index: 2;
-
-  /* background-color: rgb(99, 147, 183, 0.2); */
-
-    
-
-    text-shadow: 1px 1px 2px rgb(0, 10, 21); 
-  
-    
-   
-    padding: .4rem;
-    }
-
-    header{
-        padding-bottom: 4rem;
-    }
-}
 
 
-@media (max-width:500px) {
-    .title-image{
-        height: 400px;
-        min-width: 300px;
-        position: static;
-        left: 100px;
-        margin-bottom: 2rem;
-      
-        z-index: 1;
-        /* box-shadow: none; */
-        
-    }
 
-    .my-name{
-    position: static;
-    background: none;
-    top: auto;
-    left: auto;
-    /* left: 430px; */
-    /* border: red 1px solid; */
-   min-width: 8rem;;
-   color:#ffffff;
-   
-   padding: 0;
-   margin: 0;
-   z-index: 2;
-   font-size: 3rem;
 
-  /* background-color: rgb(99, 147, 183, 0.2); */
-
-    
-
-    text-shadow: 1px 1px 2px rgb(0, 10, 21); 
-  
-    
-   
-    padding: .4rem;
-    }
-
-    header{
-        padding-bottom: 4rem;
-    }
-}
 
 .about-me{
     margin: 0 auto;
     background-color: white;
-    min-height: 450px;
+    /* min-height: 12rem; */
    
     /* border: red solid 1px; */
-    padding: 4rem 5rem;
+    padding: 4rem 4rem;
     position: relative;
-    left: -3;
-    top: 30px;
+    left: -2rem;
+    top: 3rem;
     line-height: 1.4;
     box-shadow: 2px 3px 6px rgb(205, 205, 205);
     z-index: 1;
 }
 
 .about-me h2{
-    margin-top: 30px;
-}
-
-@media (max-width: 1200px){
-.about-me{
-    margin: 0 auto;
-    background-color: white;
-    
-   min-width: 640px;
-   float: left;
-    
-    /* border: red solid 1px; */
-    padding: 2rem;
-    position: relative;
-    left: -250;
-    top: 120px;
-   
-    box-shadow: 2px 3px 6px rgb(205, 205, 205);
-    z-index: 1;
+    margin-top: 1rem;
 }
 
 
 
-}
-
-@media (max-width:500px){
-.about-me{
-    margin: 0 auto 2rem auto;
-    background-color: white;
-    
-   min-width: 3rem;
-   
-    
-   
-    padding: 0 .2rem;
-    position: static;
-   
-   
-    box-shadow: none;
-    z-index: 1;
-}
-.about-me-header{
-    position: static;
-    text-align: center;
-    margin: .2rem auto;
-    
-}
-.about-me h2{
-    margin-top: 0;
-}
-
-
-}
 
 
 
@@ -306,40 +160,9 @@ h3{
     color: #2b2b2b;
 }
 
-@media(max-width: 1200px){
-    .shape{
-     float: left;
-  shape-outside: inset(0);
- 
-  /* background-color: rgba(0, 0, 255, 0.2); */
-  min-height: 320px;
-        min-width: 340px;
-        /* position: relative;
-        right: 100px;
-        bottom: 178px; */
-    }
 
-.about-me-text{
-    font-size: 1.35rem;
-    line-height: 1.4;
-}
 
-}
 
-@media(max-width: 500px){
-    .shape{
-  
-    display: none;
-  
-
-    }
-
-.about-me-text{
-    font-size: 1.35rem;
-    line-height: 1.4;
-}
-
-}
 
 .icons{
     display: flex;
@@ -348,48 +171,16 @@ h3{
 }
 
 .icon{
-    width: 2.5rem !important;
-    margin: 5rem 1rem 0 1rem;
-    box-shadow: none !important;
-}
-
-@media (max-width: 1200px){
-    .icons{
-        display: none;
-    }
-
-  
+    width: 2.5rem  ;
+    margin: 0rem 1rem 0 1rem;
+    box-shadow: none  ;
 }
 
 
 
-
-/* .title-card {
-  position: relative;
-  background: white;
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border-radius: 6px;
-}
-
-.title-image {
-  position: absolute;     
-  top: -40px;           
-  left: -40px;            
-  width: 150px;          
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  z-index: 2;            
-}
-
-.title-content {
-  margin-left: 120px;     
-}*/
 .my-work {
-    margin: 8rem 0;
+    margin: 8rem auto;
+    max-width: 1200px;
 }
 
 .my-work h2{
@@ -399,18 +190,19 @@ h3{
 
 .card-container{
    
-    
+    margin: 0 2rem;
     display: grid;
-    gap: 1.4rem 2rem;
+    gap: 1.4rem .8rem;
     
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 .card{
-   
+   display: grid;
+   grid-template-rows: 5fr 3fr;
     /* padding: .6rem; */
     text-align: center;
-    max-width: 600px;
+    max-width: 25rem;
     background-color: rgb(208, 213, 213);
     border-radius: 3px;
    
@@ -418,9 +210,9 @@ h3{
 } 
 
 .card-top{
-    
-    min-height: 250px;
-   padding: 2rem 0;
+    margin: auto;
+    /* min-height: 15rem; */
+   padding: 2rem;
    
    
  
@@ -428,12 +220,41 @@ h3{
     
 }
 
+.card-bottom{
+    background-color: white;
+}
+
+.project-image{
+    object-fit: contain;
+    display: block;
+     max-height: 225px;
+     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+     
+}
+
+.project-name{
+    text-align: left;
+    padding-left: 1rem;
+    
+}
+
+.project-description{
+    padding: .0 0 2rem 1rem;
+    text-align: left;
+    color: #2b2b2b;
+    line-height: 1.3;
+}
+
+
 .card-body{
     display: grid;
     grid-template-columns: 5fr 2fr;
     align-items: center;
    
     padding-top: 1rem;
+    margin-bottom: 0;
   
     background-color: white;
     
@@ -465,121 +286,8 @@ h3{
 
 
 
-.project-image{
-    object-fit: contain;
-    display: block;
-     max-height: 225px;
-     max-width: 595px;
-
-     margin: 0 auto auto;
-     
-}
-
-.project-name{
-    text-align: left;
-    padding-left: 1rem;
-    
-}
-
-.project-description{
-    padding: .0 0 2rem 1rem;
-    text-align: left;
-    color: #2b2b2b;
-    line-height: 1.3;
-}
-
-@media(max-width: 500px){
-.my-work {
-    margin: 0 auto;
-}
-
-.my-work h2{
-    margin: 2rem auto 0 auto;
-    padding-top: 3rem;
-    max-width: 20rem;
-    font-size: 2.5rem;
-
-}
-
-.card-container{
-   
-    display: block;
-    margin: 0 auto;
-    
-    /* grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); */
-}
-
-.card{
-   margin: 1rem auto;
-    /* padding: .6rem; */
-   
-    max-width: 25rem;
-    
-} 
-
-.card-top{
-    
-    min-height: 5rem;
-   padding: 1rem 0;
-   
-   
- 
-    
-    
-}
-
-.card-body{
-    
-   
-    padding-top: .2rem;
-  
-   
-    
-    
-}
-
-.card-body> .icons{
-    display: flex;
-    justify-items: flex-end;;
-    
-}
-
-.card-body > .icons > .icon{
-
-    margin: 0 1rem 0 0;
-    height: 2.3rem;
-    color: #2b2b2b;
-    
-}
 
 
-
-
-
-.project-image{
-    object-fit: cover;
-    display: block;
-     max-height: 225px;
-     max-width: 595px;
-    
-     margin: 0 auto;
-     
-}
-
-.project-name{
-    text-align: left;
-    padding-left: 1rem;
-    
-}
-
-.project-description{
-    padding: .0 0 2rem 1rem;
-    text-align: left;
-    color: #2b2b2b;
-    line-height: 1.3;
-}
-
-}
 
 footer{
     
@@ -588,15 +296,19 @@ footer{
 }
 
 .footer-container {
- display: block;
+ display: grid;
     margin: 0 auto;
-  
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+  gap: 4rem;
 }
 
 .footer-container img {
-    max-width: 20rem;
-    object-fit: contain;
+    max-width: 100%;
+   margin: auto;
+    object-fit: cover;
     padding-top: 1rem;
+    
        
 }
 
@@ -608,11 +320,19 @@ a{
     line-height: 1.5;
     color: white;
     font-size: 1.3rem;
-    position: relative;
+    
 }
 
+
+
 .contact-details-container .icons{
-    justify-content: center;
+   
+    justify-content: flex-start;
+}
+
+.contact-details-container .icons .icon{
+   
+    margin: 0 2rem 0 0;
 }
 
 .footer-text{
@@ -634,18 +354,323 @@ address{
     margin-bottom: 1rem;
 }
 
-@media(max-width: 500px){
-   footer{
-    margin: 0;
-    padding: 0;
-   }
-    .footer-container img {
-    max-width: 100%;
-    object-fit: contain;
-    padding-top: 1rem;
-    
+
+
+@media (max-width: 1000px){
+  header{
+        margin: 0;
+        padding: 0;
+        margin-right: -2rem;
+        
+        /* grid-template-columns: 1fr 18fr; */
+    }
+
+.title-card{
+   top: auto;
+   bottom: 5rem;
+   left: 10rem;
        
+       
+}
+
+    .title-image{
+       
+        max-height: 28rem; 
+        width: 24rem;;
+     
+        z-index: -1;
+        
+        
+    }
+
+    .my-name{
+    position: relative;
+    background: none;
+    top: 8rem;
+    right: -65%;
+    /* border: red 1px solid; */
+   min-width: 400px;
+   color:#2b2b2b;
+   z-index: 2;
+
+  /* background-color: rgb(99, 147, 183, 0.2); */
+
+    
+
+    text-shadow: 1px 1px 2px rgb(0, 10, 21); 
+  
+    
+   
+    padding: .4rem;
+    }
+
+    
+
+    .about-me{
+  
+    background-color: white;
+    
+  width: 70%;
+   float: left;
+    
+    /* border: red solid 1px; */
+    padding: 2rem;
+    position: absolute;
+    left: 12rem;
+    top: 11rem;
+    
+   
+    box-shadow: 2px 3px 6px rgb(205, 205, 205);
+    z-index: 1;
+}
+
+.shape{
+     float: left;
+  shape-outside: inset(0);
+
+ clip-path: 1rem;
+  /* background-color: rgba(0, 0, 255, 0.2); */
+  height: 16.3rem;
+        width: 21rem;
+        position: relative;
+       right: 1rem;
+        bottom: -1.3rem;
+        /* right: 100px;
+        bottom: 178px; */
+        z-index: 4;
+    }
+
+.about-me-text{
+    font-size: 1.35rem;
+    line-height: 1.3;
+   
+}
+
+ .icons{
+        display: none;
+    }
 
 }
+
+@media(max-width: 840px){
+     header{
+        margin: 0;
+        margin-bottom: 2rem;;
+        padding: 0;
+        display: block;
+        
+      
+    }
+   
+
+.title-card{
+   top: auto;
+   bottom: auto;
+   left: 3rem;
+       
+       
+}
+
+    .title-image{
+       
+        max-height: 28rem; 
+        
+     
+        z-index: -1;
+        
+        
+    }
+
+    .about-me{
+  
+   overflow: hidden;
+ 
+    min-width: 5rem;
+    max-height: 37rem;
+ 
+    padding: 2rem;
+    position: absolute;
+    left: 10rem;
+    top: 11rem;
+    
+   
+    box-shadow: 2px 3px 6px rgb(205, 205, 205);
+    z-index: 1;
+}
+   
+.about-me-text{
+    text-overflow:ellipsis;
+}
+
+    .my-name{
+   
+   
+    top: 5rem;
+    left: 6rem;
+ 
+
+   
+   
+    }
+
+    
+.shape{
+     float: left;
+  shape-outside: inset(0);
+
+
+ 
+  min-height: 22rem;
+       width: 16rem;
+        position: relative;
+        bottom: -1.3rem;
+        
+        z-index: 4;
+    }
+
+    .my-work{
+        margin: 12rem auto 0 auto;
+        padding-top: 4rem;
+        text-align: center;
+       
+       
+    }
+
+    .my-work h2{
+        padding: 1rem 0 0 0;
+    }
+    .card-container{
+   
+    display: block;
+    margin: 0 auto;
+    
+    /* grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); */
+}
+
+.card{
+    margin: 1rem auto;
+   
+}
+
+ }
+  
+ 
+ @media (max-width: 500px) {
+    main,
+footer,
+.footer-container {
+    width: 100%  ;
+    max-width: 100%  ;
+    margin: 0 auto  ;
+    padding: 1rem  ;
+}
+
+  header {
+    display: block;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .title-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block  ;
+  }
+
+  .title-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    float: none;
+    object-fit: cover;
+    margin: 0;
+    box-shadow: 2px 3px 6px rgba(205,205,205);
+  }
+
+.my-name {
+  position: static  ;
+  float: none  ;
+  display: block;
+  width: 100%;
+  left: auto  ;
+    right: auto  ;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+   text-align: center  ;
+    color: white;
+  font-size: 3rem;
+}
+
+
+
+
+ .about-me {
+    position: relative;
+    width: 100%;
+    margin: 0 0 3rem 0;
+    padding: 1.5rem;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 3px 6px rgb(205, 205, 205);
+  }
+
+  .shape {
+    display: none;
+  }
+
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-me-text {
+    font-size: 1.1rem;
+  }
+
+ 
+  .my-work {
+   
+    padding: 0 1rem;
+   
+  }
+
+  .card-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 24rem;
+    margin: 1.5rem auto;
+  } 
+
+
+     body{
+        padding: 0 0;
+        margin: 0 auto;
+         background: linear-gradient(170deg, rgb(99, 147, 183) 10% , rgb(205, 205, 205) 10.1%, white 10.3%);
+    }
+    main, .footer-container{
+       
+        margin: 0 auto;
+    }
 
 }
