@@ -137,7 +137,7 @@ h3 {
 }
 
 .my-work h2 {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 2rem 2rem;
   max-width: 1200;
 }
 
@@ -306,7 +306,7 @@ address {
     top: 8rem;
     right: -65%;
 
-    min-width: 400px;
+   
     color: #2b2b2b;
     z-index: 2;
 
@@ -353,6 +353,8 @@ address {
   .icons {
     display: none;
   }
+
+ 
 }
 
 @media (max-width: 840px) {
